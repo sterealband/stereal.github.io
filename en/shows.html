@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!--FUNDAMENTAL PARA QUE FUNCIONE BIEN CON MOVILES-->
+<!--http://stackoverflow.com/questions/19156510/responsive-website-zoomed-out-to-full-width-on-mobile-->
+<head>
+    <meta name="viewport" content="initial-scale=1">
+    <title>STEREAL SHOWS</title>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="../Scripts/jquery-2.1.3.min.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../Content/stereal.css" />
+
+</head>
+<body>
+
+    <!--START MENU-->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" style="font-size:24px" href="index.html">
+                    <img class="img-responsive" style="margin-top: -10px; margin-left:-5px" src="../Images/stereal_head_logo.png" />
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="active"><a href="shows.html">SHOWS</a></li>
+                    <li><a href="albums.html">ALBUMS</a></li>
+                    <li><a href="bio.html">BIOGRAPHY</a></li>
+                    <li><a href="http://stereal.bandcamp.com/yum">DOWNLOAD</a></li>
+
+
+
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://www.facebook.com/pages/STEREAL/476457822520486?sk=timeline&ref=page_internal" target="_blank"><i class="fa fa-facebook-square fa-3x"></i></a></li>
+                    <li><a href="https://twitter.com/@stereal_band" target="_blank"><i class="fa fa-twitter-square fa-3x"></i></a></li>
+                    <li><a href="https://instagram.com/sterealband" target="_blank"><i class="fa fa-instagram fa-3x"></i></a></li>
+                    <li><a href="https://www.youtube.com/watch?v=5u9F6zCJzQo" target="_blank"><i class="fa fa-youtube-play fa-3x"></i></a></li>
+                    <li><a href="https://soundcloud.com/sterealband" target="_blank"><i class="fa fa-soundcloud fa-3x"></i></a></li>
+                    <li id="icon_lng"><a href="../es/shows.html"><img id="icon_img" class="img-responsive" src="../Images/icon_esp.png"></img></a></li>
+
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <!-- END MENU-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                  <div class="table-responsive">
+
+                    <table class="table table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Hour</th>
+                                <th>Place</th>
+                                <th>Info</th>
+                             
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Saturday October 17, 2015</td>
+                                <td>21:00h</td>
+                                <td>Restaurant Beurko Berria. Av de Miranda, 4, Barakaldo <a style="color:blue !important;" href="https://www.google.es/maps/place/Beurko+Berria/@43.2990001,-2.993856,15z/data=!4m2!3m1!1s0x0:0x67638c58277f8134" target="_blank"> view map </a></td>
+                                <td>10th Anniversary restaurant bar Beurko BERRIA coinciding with the celebrations of the district Beurko Bagatza.</td>
+                            </tr>
+
+                            <tr>
+                                <td>Saturday December 12, 2015</td>
+                                <td>11:00h</td>
+                                <td>Pikotos Azoka Musika in the old food market Portugalete <a style="color:blue !important;" href="https://www.google.es/maps/place/mercado+de+abastos/@43.3217955,-3.0177221,104m/data=!3m1!1e3!4m2!3m1!1s0x0000000000000000:0x339937ca4e7a4a80!6m1!1e1" target="_blank"> ver mapa </a></td>
+                                <td>From the 11th am to 11 pm will have stalls to sell merchandising bands, vinyl, guitars, a space for activities, workshops, music samples, play some songs in acoustic, concerts, etc. </td>
+                            </tr>
+
+                            
+                            
+                        </tbody>
+                    </table>
+
+                    
+
+                </div>
+            </div>
+
+        </div>
+        <hr />
+    </div>
+
+    <div id="footer">
+        <div class="container">
+            <p class="text-center">Contact: stereal@gmail.com</p>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        function iconIn() {
+
+            $('#icon_img').attr("src", "../Images/icon_esp_over.png");
+
+        }
+
+        function iconOut() {
+
+            $('#icon_img').attr("src", "../Images/icon_esp.png");
+        }
+        function readyPage() {
+
+
+
+            $('#icon_lng').hover(iconIn, iconOut);
+
+
+        }
+
+        $(document).ready(readyPage);
+    </script>
+
+
+
+
+</body>
+</html>

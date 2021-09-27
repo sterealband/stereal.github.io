@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="initial-scale=1">
+    <title>STEREAL</title>
+ 
+    <script src="Scripts/jquery-2.1.3.min.js"></script>
+    
+</head>
+<body>
+
+    <script type="text/javascript">
+
+        function readyPage() {
+            var LANG = 'en';
+            var PREFER_LANG = navigator.language || navigator.userLanguage || navigator.browserLanguage || navigator.systemLanguage || LANG;
+            if (PREFER_LANG.toLowerCase().substr(0, 2) == "es" || PREFER_LANG.toLowerCase().substr(0, 3) == "es-") {
+                window.location.href = 'es/index.html';
+                //console.log(PREFER_LANG)
+
+            }
+            else {
+                window.location.href = 'en/index.html';
+                //console.log(PREFER_LANG)
+            }
+           
+        }
+
+        $(document).ready(readyPage);
+
+    </script>
+
+</body>
+</html>

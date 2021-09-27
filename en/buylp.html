@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!--FUNDAMENTAL PARA QUE FUNCIONE BIEN CON MOVILES-->
+<!--http://stackoverflow.com/questions/19156510/responsive-website-zoomed-out-to-full-width-on-mobile-->
+<head>
+    <meta name="viewport" content="initial-scale=1">
+    <title>STEREAL CONCIERTOS</title>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="../Scripts/jquery-2.1.3.min.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../Content/stereal.css" />
+
+</head>
+
+
+<body>
+
+    <style>
+        body {
+            background-image: none !important;
+            background-color: #ced0cd !important;
+        }
+    </style>
+
+    <!--START MENU-->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" style="font-size:24px" href="index.html">
+                    <img class="img-responsive" style="margin-top: -10px; margin-left:-5px" src="../Images/stereal_head_logo.png" />
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="shows.html">SHOWS</a></li>
+                    <li ><a href="albums.html">ALBUMS</a></li>
+                    <li><a href="bio.html">BIOGRAPHY</a></li>
+                    <li><a href="http://stereal.bandcamp.com/yum">DOWNLOAD</a></li>
+
+
+
+                </ul>
+
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://www.facebook.com/pages/STEREAL/476457822520486?sk=timeline&ref=page_internal" target="_blank"><i class="fa fa-facebook-square fa-3x"></i></a></li>
+                    <li><a href="https://twitter.com/@stereal_band" target="_blank"><i class="fa fa-twitter-square fa-3x"></i></a></li>
+                    <li><a href="https://instagram.com/sterealband" target="_blank"><i class="fa fa-instagram fa-3x"></i></a></li>
+                    <li><a href="https://www.youtube.com/watch?v=5u9F6zCJzQo" target="_blank"><i class="fa fa-youtube-play fa-3x"></i></a></li>
+                    <li><a href="https://soundcloud.com/sterealband" target="_blank"><i class="fa fa-soundcloud fa-3x"></i></a></li>
+                    <li id="icon_lng"><a href="../es/buylp.html"><img id="icon_img" class="img-responsive" src="../Images/icon_esp.png"></img></a></li>
+
+
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <!-- END MENU-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!--<div class="alert alert-success text-center">
+                    <h2>De momento sin fechas confirmadas.</h2>
+                </div>-->
+                <a class="fancybox" rel="group" href="../Images/stereal_itscoming.jpg"><img class="img-responsive" src="../Images/stereal_itscoming.jpg" /></a>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+              
+                    <p class="text-center">
+
+                        <font size="4">
+
+                            Get a copy our record for only 10 €
+                            LP + CD format (MP3 download, poster and booklet included)
+                            LIMITED AND NUMBERED EDITION - ONLY 250 COPIES
+                            contact us at stereal@gmail.com and we tell you how.
+                        </font>
+
+</p>
+                
+
+
+            </div>
+
+        </div>
+        <hr />
+    </div>
+
+    <div id="footer">
+        <div class="container">
+            <p class="text-center">Contact: stereal@gmail.com</p>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        function iconIn() {
+
+            $('#icon_img').attr("src", "../Images/icon_esp_over.png");
+
+        }
+
+        function iconOut() {
+
+            $('#icon_img').attr("src", "../Images/icon_esp.png");
+        }
+        function readyPage() {
+
+
+
+            $('#icon_lng').hover(iconIn, iconOut);
+
+
+        }
+
+        $(document).ready(readyPage);
+    </script>
+
+
+
+</body>
+</html>
+
+
